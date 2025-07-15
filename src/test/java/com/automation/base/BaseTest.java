@@ -19,8 +19,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 
 	protected WebDriver driver;
-	// sample e-commerce site
-	private static final String appURL = "https://www.demoblaze.com";
 
 	@BeforeMethod
 	public void setUp() {
@@ -33,7 +31,7 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		// open the test site
-		driver.get(appURL);
+		driver.get("https://www.demoblaze.com"); // sample e-commerce site
 
 	}
 
