@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\dhana\AppData\Local\Temp\testng-eclipse-351932945\testng-customsuite.xml</span>
+                    <span>C:\Users\dhana\AppData\Local\Temp\testng-eclipse--346425024\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -117,7 +117,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.LoginTest" class="method navigator-link" hash-for-method="testInvalidCredentials">testInvalidCredentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -143,8 +143,8 @@
                   <a name="testInvalidUser">
                   </a> <!-- testInvalidUser -->
                   <span class="method-name">testInvalidUser</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping as this method is deprecated by new version.
-	at com.automation.tests.LoginTest.testInvalidUser(LoginTest.java:51)
+                  <div class="stack-trace">org.testng.SkipException: Skipping this test scenario for this test run.
+	at com.automation.tests.LoginTest.testInvalidUser(LoginTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -187,9 +187,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testInvalidCredentials">
-                  </a> <!-- testInvalidCredentials -->
-                  <span class="method-name">testInvalidCredentials</span>
+                  <a name="testValidLogin">
+                  </a> <!-- testValidLogin -->
+                  <span class="method-name">testValidLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,7 +197,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\dhana\AppData\Local\Temp\testng-eclipse-351932945\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\dhana\AppData\Local\Temp\testng-eclipse--346425024\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -248,18 +248,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testInvalidCredentials')
+data.setCell(0, 1, 'testValidLogin')
 data.setCell(0, 2, 'com.automation.tests.LoginTest')
-data.setCell(0, 3, 2180);
+data.setCell(0, 3, 7793);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testInvalidUser')
 data.setCell(1, 2, 'com.automation.tests.LoginTest')
-data.setCell(1, 3, 3);
+data.setCell(1, 3, 10);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -280,7 +280,7 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.automation.tests.LoginTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testValidLogin</span>
+                <span class="ignored-method-name">testInvalidCredentials</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -298,24 +298,24 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testInvalidCredentials</span>
-                <span class="method-start">5691 ms</span>
+                <span class="method-name">testInvalidUser</span>
+                <span class="method-start">6464 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7874 ms</span>
+                <span class="method-start">6482 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">8223 ms</span>
+                <span class="method-start">6959 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testInvalidUser</span>
-                <span class="method-start">11632 ms</span>
+                <span class="method-name">testValidLogin</span>
+                <span class="method-start">10068 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11639 ms</span>
+                <span class="method-start">17861 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

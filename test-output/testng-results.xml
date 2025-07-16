@@ -2,35 +2,23 @@
 <testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-16T10:53:43 IST" name="Default suite" finished-at="2025-07-16T10:53:55 IST" duration-ms="11961">
+  <suite started-at="2025-07-16T13:02:54 IST" name="Default suite" finished-at="2025-07-16T13:03:12 IST" duration-ms="18247">
     <groups>
     </groups>
-    <test started-at="2025-07-16T10:53:43 IST" name="Default test" finished-at="2025-07-16T10:53:55 IST" duration-ms="11961">
+    <test started-at="2025-07-16T13:02:54 IST" name="Default test" finished-at="2025-07-16T13:03:12 IST" duration-ms="18247">
       <class name="com.automation.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.LoginTest@53fe15ff]" started-at="2025-07-16T10:53:43 IST" name="setUp" finished-at="2025-07-16T10:53:49 IST" duration-ms="5687" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.LoginTest@53fe15ff]" started-at="2025-07-16T13:02:54 IST" name="setUp" finished-at="2025-07-16T13:03:00 IST" duration-ms="6459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidCredentials()[pri:0, instance:com.automation.tests.LoginTest@53fe15ff]" started-at="2025-07-16T10:53:49 IST" name="testInvalidCredentials" finished-at="2025-07-16T10:53:51 IST" duration-ms="2180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.tests.LoginTest@53fe15ff]" started-at="2025-07-16T10:53:51 IST" name="tearDown" finished-at="2025-07-16T10:53:51 IST" duration-ms="349" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.LoginTest@53fe15ff]" started-at="2025-07-16T10:53:51 IST" name="setUp" finished-at="2025-07-16T10:53:55 IST" duration-ms="3408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testInvalidUser()[pri:0, instance:com.automation.tests.LoginTest@53fe15ff]" started-at="2025-07-16T10:53:55 IST" name="testInvalidUser" finished-at="2025-07-16T10:53:55 IST" duration-ms="3" status="SKIP">
+        <test-method signature="testInvalidUser()[pri:0, instance:com.automation.tests.LoginTest@53fe15ff]" started-at="2025-07-16T13:03:00 IST" name="testInvalidUser" finished-at="2025-07-16T13:03:00 IST" duration-ms="10" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skipping as this method is deprecated by new version.]]>
+              <![CDATA[Skipping this test scenario for this test run.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping as this method is deprecated by new version.
-at com.automation.tests.LoginTest.testInvalidUser(LoginTest.java:51)
+              <![CDATA[org.testng.SkipException: Skipping this test scenario for this test run.
+at com.automation.tests.LoginTest.testInvalidUser(LoginTest.java:45)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,7 +53,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.tests.LoginTest@53fe15ff]" started-at="2025-07-16T10:53:55 IST" name="tearDown" finished-at="2025-07-16T10:53:55 IST" duration-ms="272" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.tests.LoginTest@53fe15ff]" started-at="2025-07-16T13:03:00 IST" name="tearDown" finished-at="2025-07-16T13:03:01 IST" duration-ms="475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.LoginTest@53fe15ff]" started-at="2025-07-16T13:03:01 IST" name="setUp" finished-at="2025-07-16T13:03:04 IST" duration-ms="3107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:0, instance:com.automation.tests.LoginTest@53fe15ff]" started-at="2025-07-16T13:03:04 IST" name="testValidLogin" finished-at="2025-07-16T13:03:12 IST" duration-ms="7793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.tests.LoginTest@53fe15ff]" started-at="2025-07-16T13:03:12 IST" name="tearDown" finished-at="2025-07-16T13:03:12 IST" duration-ms="335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
