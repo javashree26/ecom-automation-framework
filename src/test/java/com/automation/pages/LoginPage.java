@@ -5,6 +5,7 @@ package com.automation.pages;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -59,5 +60,16 @@ public class LoginPage {
 		enterUsername(username);
 		enterPassword(password);
 		clickSubmitButton();
+	}
+
+	public String getLoginAlertText() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(7));
+		wait.until(ExpectedConditions.alertIsPresent());
+
+		Alert alert = driver.switchTo().alert();
+		String alertText = alert.getText();
+		alert.accept();
+		return alertText;
+
 	}
 }
