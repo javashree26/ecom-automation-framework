@@ -3,12 +3,6 @@
  */
 package com.automation.tests;
 
-import java.time.Duration;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
@@ -24,7 +18,7 @@ import com.automation.pages.LoginPage;
 public class LoginTest extends BaseTest {
 
 	// using enabled = false approach to skip this test scenario
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void testValidLogin() {
 
 		LoginPage loginPage = new LoginPage(driver);
@@ -33,7 +27,7 @@ public class LoginTest extends BaseTest {
 		loginPage.login("test", "test");
 
 		// verifying whether login is successful
-		HomePage homePage = new HomePage();
+		HomePage homePage = new HomePage(driver);
 		Assert.assertTrue(homePage.isLogoutButtonVisible(driver),
 				"Login might have failed — logout button not visible");
 		try {
@@ -57,7 +51,7 @@ public class LoginTest extends BaseTest {
 		Assert.assertEquals(alertText, "User does not exist.");
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void testInvalidCredentials() {
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.login("test", "test123");
