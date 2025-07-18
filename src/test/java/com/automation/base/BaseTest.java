@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.automation.utils.Constants;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
@@ -31,7 +33,7 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		// open the test site
-		driver.get("https://www.demoblaze.com"); // sample e-commerce site
+		driver.get(Constants.BASE_URL); // sample e-commerce site, not working anymore
 
 	}
 
