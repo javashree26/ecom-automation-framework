@@ -14,19 +14,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Java 11
+      - name: Set up Java
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
           java-version: '11'
 
-      - name: Cache Maven packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
+      - name: Set up Chrome browser
+        uses: browser-actions/setup-chrome@v1
 
-      - name: Build and Run Tests with Maven
-        run: mvn clean test
+      - name: Build with Maven
+        run: mvn clean install
+
+      - name: Run Selenium Tests
+        run: mvn test
